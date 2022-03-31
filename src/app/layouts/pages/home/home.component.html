@@ -8,7 +8,10 @@
       <div class="card">
         <div class="card-header">
           <small>
-            <strong> {{ question.user.name }} </strong>pregunta:
+            <a [routerLink]="['/public-profile']">
+              <strong> {{ question.user.name }} </strong>
+            </a>
+            pregunta:
           </small>
           <p>
             <em>{{ question.question }}</em>
@@ -25,7 +28,9 @@
               <p>{{ answer.answer }}</p>
             </li>
           </ul>
-          <a [routerLink]="['/question']" class="btn btn-sm btn-primary"> Ver más </a>
+          <a [routerLink]="['/question']" class="btn btn-sm btn-primary">
+            Ver más
+          </a>
         </div>
       </div>
     </div>

@@ -21,6 +21,7 @@ import { MatchComponent } from './pages/match/match.component';
 import { ActionButtonsComponent } from './components/action-buttons/action-buttons.component';
 import { QuestionDetailComponent } from './pages/question-detail/question-detail.component';
 import { PublicProfileComponent } from './pages/public-profile/public-profile.component';
+import { CompanyPublicProfileComponent } from './pages/company-public-profile/company-public-profile.component';
 
 @NgModule({
   imports: [
@@ -42,6 +43,7 @@ import { PublicProfileComponent } from './pages/public-profile/public-profile.co
     ActionButtonsComponent,
     QuestionDetailComponent,
     PublicProfileComponent,
+    CompanyPublicProfileComponent,
   ],
 })
 export class AdminLayoutModule {}
