@@ -16,9 +16,9 @@
       <div class="card card-answer" *ngFor="let answer of question.answers">
         <div class="card-body">
           <p>
-            <span class="answer-user">
+            <a class="answer-user"[routerLink]="['/public-profile']">
               {{ answer.user.name }} - {{ answer.user.email }}
-            </span>
+            </a>
             dice:
           </p>
           <p>{{ answer.answer }}</p>

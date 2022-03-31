@@ -4,7 +4,25 @@
       <div class="col-md-8">
         <h2>Perfil público</h2>
         <div class="card content-card">
-          <h3>Preguntas destacadas</h3>
+          <h3 class="section-subtitle">Preguntas destacadas</h3>
+          <ul>
+            <li class="list-style-none" *ngFor="let question of questions">
+              <p>
+                {{ question.question }}
+              </p>
+              <small>Reacciones: {{ question.reactions }}</small>
+            </li>
+          </ul>
+        </div>
+        <div class="card content-card">
+          <h3 class="section-subtitle">Respuestas destacadas</h3>
+          <ul>
+            <li *ngFor="let answer of answers">
+              <p>
+                {{ answer.answer }}
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -35,6 +53,11 @@
               Bienvenidos a mi perfil, me ecanta ayudar a las personas a
               potenciar los negocios
             </p>
+            <h4>Información</h4>
+            <p>Empresa: <span>Exportadora de colombia SAS</span></p>
+            <p>Cantidad de preguntas: 50</p>
+            <p>Cantidad de respuestas: 110</p>
+            <p>Rol: Oferente</p>
           </div>
           <hr />
           <div class="text-center">

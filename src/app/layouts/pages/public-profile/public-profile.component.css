@@ -1,3 +1,7 @@
 .content-card{
   padding: 20px !important;
 }
+
+.list-style-none {
+  list-style: none;
+}

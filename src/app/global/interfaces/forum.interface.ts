@@ -5,6 +5,7 @@ export interface ForumQuestion {
   user?: User;
   answers?: ForumAnwser[];
   featuredAnswers?: ForumAnwser[];
+  reactions?: number;
 }
 
 export interface ForumAnwser {
