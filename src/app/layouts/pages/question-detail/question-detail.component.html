@@ -1,5 +1,28 @@
-<div class="main-container">
+<div class="main-content">
   <div class="container-fluid">
-    <h1>Pregunta</h1>
+    <div class="card">
+      <h2>Detalle de pregunta</h2>
+      <p>
+        {{ question.question }}
+      </p>
+      <small>Por: {{ question.user.name }} - {{ question.user.email }}</small>
+      <app-action-buttons></app-action-buttons>
+      <h3>Respuestas</h3>
+      <hr />
+      <div class="card card-answer" *ngFor="let answer of question.answers">
+        <div class="card-body">
+          <p>
+            <span class="answer-user">
+              {{ answer.user.name }} - {{ answer.user.email }}
+            </span>
+            dice:
+          </p>
+          <p>{{ answer.answer }}</p>
+        </div>
+        <div class="card-footer">
+          <app-action-buttons></app-action-buttons>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

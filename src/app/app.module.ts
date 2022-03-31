@@ -12,7 +12,6 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/pages/admin-layout/admin-layout.component';
-import { QuestionDetailComponent } from './layouts/pages/question-detail/question-detail.component';
 
 @NgModule({
   imports: [
@@ -28,7 +27,6 @@ import { QuestionDetailComponent } from './layouts/pages/question-detail/questio
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    QuestionDetailComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

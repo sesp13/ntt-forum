@@ -1,0 +1,9 @@
+.actions-panel {
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.actions-panel button {
+  margin-right: 10px;
+}
