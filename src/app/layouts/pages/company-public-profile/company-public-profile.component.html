@@ -3,8 +3,35 @@
     <h2>Perfil de compañía</h2>
     <div class="card p-3">
       <div class="card-header">
-        <h3>{{ company.name }}</h3>
+        <h2>{{ company.name }}</h2>
+        <h4>Descripción</h4>
         <p>{{ company.description }}</p>
+        <h4>Calificación general</h4>
+        <p>{{ company.rate | number }}</p>
+      </div>
+    </div>
+    <div class="row container-fluid">
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h3>Usuarios</h3>
+          <ul>
+            <li *ngFor="let user of company.users">
+              <p>
+                <a [routerLink]="['/public-profile']">
+                  {{ user.name }} - {{ user.email }}
+                </a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h3>Contenido destacado</h3>
+          <hr />
+          <p>Nuevos contenidos dentro de la empresa</p>
+          <p>Incursiones con los clientes</p>
+        </div>
       </div>
     </div>
   </div>

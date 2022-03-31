@@ -6,4 +6,5 @@ export interface Company {
   description?: string;
   users?: User[];
   questions?: ForumQuestion[];
+  rate?: number;
 }
