@@ -9,6 +9,7 @@ import { MapsComponent } from '../maps/maps.component';
 import { NotificationsComponent } from '../notifications/notifications.component';
 import { MatchComponent } from './pages/match/match.component';
 import { QuestionDetailComponent } from './pages/question-detail/question-detail.component';
+import { PublicProfileComponent } from './pages/public-profile/public-profile.component';
 
 export const AdminLayoutRoutes: Routes = [
   { path: 'dashboard', component: HomeComponent },
@@ -20,4 +21,5 @@ export const AdminLayoutRoutes: Routes = [
   { path: 'notifications', component: NotificationsComponent },
   { path: 'match', component: MatchComponent },
   { path: 'question', component: QuestionDetailComponent },
+  { path: 'public-profile', component: PublicProfileComponent },
 ];

@@ -20,6 +20,7 @@ import { NotificationsComponent } from 'app/notifications/notifications.componen
 import { MatchComponent } from './pages/match/match.component';
 import { ActionButtonsComponent } from './components/action-buttons/action-buttons.component';
 import { QuestionDetailComponent } from './pages/question-detail/question-detail.component';
+import { PublicProfileComponent } from './pages/public-profile/public-profile.component';
 
 @NgModule({
   imports: [
@@ -40,6 +41,7 @@ import { QuestionDetailComponent } from './pages/question-detail/question-detail
     MatchComponent,
     ActionButtonsComponent,
     QuestionDetailComponent,
+    PublicProfileComponent,
   ],
 })
 export class AdminLayoutModule {}

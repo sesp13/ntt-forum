@@ -5,7 +5,11 @@
       <p>
         {{ question.question }}
       </p>
-      <small>Por: {{ question.user.name }} - {{ question.user.email }}</small>
+      <small>
+        <a [routerLink]="['/public-profile']">
+          Por: {{ question.user.name }} - {{ question.user.email }}
+        </a>
+      </small>
       <app-action-buttons></app-action-buttons>
       <h3>Respuestas</h3>
       <hr />
