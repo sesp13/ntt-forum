@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ForumQuestion } from 'app/interfaces/forum.interface';
+import { ForumQuestion } from 'app/global/interfaces/forum.interface';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
