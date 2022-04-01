@@ -34,7 +34,7 @@
 #problems-section img{
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 60%;
 }
 
 /* solutions-section */
@@ -46,7 +46,7 @@
 #solutions-img{
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 60%;
 }
 
 /* benefits section */
@@ -62,5 +62,5 @@
 #reductions-img{
   display: block;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 50%;
 }
