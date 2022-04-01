@@ -57,6 +57,52 @@ export class HomeComponent implements OnInit {
           },
         ],
       },
+      {
+        question: '¿Qué empresas me recomiendan para transportar mis productos?',
+        user: {
+          name: 'Santiago Espinosa',
+          email: 'santiago@correo.com',
+        },
+        answers: [
+          {
+            answer:
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur! Facilis minima laudantium quod voluptatibus odio, voluptatem, numquam tempora sunt, nemo exercitationem corporis a tempore amet culpa natus accusamus cupiditate! ',
+            user: {
+              name: 'David García',
+            }
+          },
+          {
+            answer:
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur! Facilis minima laudantium quod voluptatibus odio, voluptatem, numquam tempora sunt, nemo exercitationem corporis a tempore amet culpa natus accusamus cupiditate! ',
+            user: {
+              name: 'Juanita Pérez',
+            }
+          },
+        ],
+      },
+      {
+        question: '¿Qué empresas me recomiendan para transportar mis productos?',
+        user: {
+          name: 'Santiago Espinosa',
+          email: 'santiago@correo.com',
+        },
+        answers: [
+          {
+            answer:
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur! Facilis minima laudantium quod voluptatibus odio, voluptatem, numquam tempora sunt, nemo exercitationem corporis a tempore amet culpa natus accusamus cupiditate! ',
+            user: {
+              name: 'David García',
+            }
+          },
+          {
+            answer:
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur! Facilis minima laudantium quod voluptatibus odio, voluptatem, numquam tempora sunt, nemo exercitationem corporis a tempore amet culpa natus accusamus cupiditate! ',
+            user: {
+              name: 'Juanita Pérez',
+            }
+          },
+        ],
+      },
     ];
   }
 }
