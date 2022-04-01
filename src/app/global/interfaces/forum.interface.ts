@@ -11,4 +11,5 @@ export interface ForumQuestion {
 export interface ForumAnwser {
   answer?: string;
   user?: User;
+  replies?: ForumAnwser[];
 }

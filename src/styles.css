@@ -1,20 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-.m-5 {
-  margin: 30px !important;
-}
 
-.p-5{
-  padding: 30px !important;
-}
+/* margins */
+@import url(./assets/css/margins.css);
 
-.p-4{
-  padding: 25px !important;
-}
-
-.p-3{
-  padding: 20px !important;
-}
-
-.p-2{
-  padding: 10px !important;
-}
+/* paddings */
+@import url(./assets/css/paddings.css);

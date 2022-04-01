@@ -28,8 +28,11 @@ export class PublicProfileComponent implements OnInit {
       answer: 'Puedes mirar muchas ofertas y cosas geniales por acá!!!'
     },
     {
-      answer: 'Esta es otra manrea de poder trabajar'
-    }
+      answer: 'Esta es otra manera de poder trabajar'
+    },
+    {
+      answer: 'Te recomiendo que vayas al centro de la ciudad a mirar más compañías'
+    },
   ]
   
   constructor() { }
