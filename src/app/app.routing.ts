@@ -22,6 +22,13 @@ const routes: Routes = [
             (m) => m.AdminLayoutModule
           ),
       },
+      {
+        path: 'forum',
+        loadChildren: () =>
+        import('./forum/forum.module').then(
+          (m) => m.ForumModule
+        ),
+      }
     ],
   },
   {
