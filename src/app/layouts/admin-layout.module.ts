@@ -11,7 +11,7 @@ import { AdminLayoutRoutes } from './admin-layout.routing';
 
 // Components
 import { HomeComponent } from 'app/layouts/pages/home/home.component';
-import { UserComponent } from 'app/user/user.component';
+import { UserComponent } from './pages/user/user.component';
 import { TablesComponent } from 'app/tables/tables.component';
 import { TypographyComponent } from 'app/typography/typography.component';
 import { IconsComponent } from 'app/icons/icons.component';

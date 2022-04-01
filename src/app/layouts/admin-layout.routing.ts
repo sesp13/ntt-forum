@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
-import { UserComponent } from '../user/user.component';
+import { UserComponent } from './pages/user/user.component';
 import { TablesComponent } from '../tables/tables.component';
 import { TypographyComponent } from '../typography/typography.component';
 import { IconsComponent } from '../icons/icons.component';
