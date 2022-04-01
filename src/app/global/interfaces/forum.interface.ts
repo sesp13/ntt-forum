@@ -6,6 +6,8 @@ export interface ForumQuestion {
   answers?: ForumAnwser[];
   featuredAnswers?: ForumAnwser[];
   reactions?: number;
+  image?: string;
+  category?: string;
 }
 
 export interface ForumAnwser {
