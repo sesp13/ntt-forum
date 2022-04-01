@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AdminLayoutComponent } from './layouts/pages/admin-layout/admin-layout.component';
+import { AdminLayoutComponent } from './shared/admin-layout/admin-layout.component';
 
 const routes: Routes = [
   {

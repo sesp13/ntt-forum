@@ -11,7 +11,7 @@ import { SidebarModule } from './sidebar/sidebar.module';
 
 import { AppComponent } from './app.component';
 
-import { AdminLayoutComponent } from './layouts/pages/admin-layout/admin-layout.component';
+import { AdminLayoutComponent } from './shared/admin-layout/admin-layout.component';
 
 @NgModule({
   imports: [
