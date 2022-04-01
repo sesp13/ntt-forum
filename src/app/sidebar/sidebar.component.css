@@ -1,0 +1,14 @@
+.logo-image{
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 25px;
+}
+
+.logo-text {
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}

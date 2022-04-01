@@ -1,11 +1,8 @@
 <div class="sidebar-wrapper">
-  <div class="logo">
-    <a href="#" class="simple-text">
-      <a href="#" class="simple-text">
-        Colaborative network
-      </a>
-    </a>
-  </div>
+  <a [routerLink]="['/dashboard']"> 
+    <img src="assets/img/firth-logo.jpg" class="logo-image" />
+    <p class="logo-text">Collaborative Network</p>
+  </a>
   <ul class="nav responsive-nav">
     <li *ngIf="isMobileMenu()">
       <a class="dropdown-toggle" data-toggle="dropdown">

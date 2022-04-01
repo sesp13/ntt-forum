@@ -1,11 +1,11 @@
 <div class="main-content">
   <h2 class="text-center">
-    Hola Bienvenido a Firth <em>Colaborative network</em>
+    Hola Bienvenido!
   </h2>
   <div class="row">
-    <h3 class="featured-content">Contenido destacado</h3>
-    <div *ngFor="let question of questions" class="col-md-6">
-      <div class="card">
+    <div class="col-md-6">
+      <h3>Contenido destacado</h3>
+      <div class="card" *ngFor="let question of questions">
         <div class="card-header">
           <small>
             <a [routerLink]="['/public-profile']">
@@ -31,6 +31,24 @@
           <a [routerLink]="['/question']" class="btn btn-sm btn-primary">
             Ver más
           </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <h3>Empresas destacadas</h3>
+      <div class="card">
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let company of companies" class="mb-3 company-list">
+              <p>
+                <a [routerLink]="['/company-public-profile']">
+                  {{ company.name }}
+                </a>
+              </p>
+              <small>Rate: {{ company.rate }}</small>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

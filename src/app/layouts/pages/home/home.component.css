@@ -2,6 +2,6 @@
   padding: 25px;
 }
 
-.featured-content {
-  margin-left: 25px;
+.company-list{
+  list-style: none;
 }
