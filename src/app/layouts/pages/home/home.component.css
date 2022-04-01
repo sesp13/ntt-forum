@@ -1,3 +1,28 @@
+#main-banner{
+  background-image: url('assets/img/proceso-exportacion.jpg');
+  height: 70vh;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+#main-banner h1 {
+  margin-top: 0px;
+  padding-top: 50vh;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.content-section{
+  padding: 40px initial 40px initial;
+}
+
+.content-section h2{
+  text-align: center;
+}
+
+
 .card{
   padding: 25px;
 }
