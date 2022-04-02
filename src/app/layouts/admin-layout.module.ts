@@ -20,6 +20,7 @@ import { ActionButtonsComponent } from './components/action-buttons/action-butto
 import { QuestionDetailComponent } from './pages/question-detail/question-detail.component';
 import { PublicProfileComponent } from './pages/public-profile/public-profile.component';
 import { CompanyPublicProfileComponent } from './pages/company-public-profile/company-public-profile.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   imports: [
@@ -40,6 +41,7 @@ import { CompanyPublicProfileComponent } from './pages/company-public-profile/co
     QuestionDetailComponent,
     PublicProfileComponent,
     CompanyPublicProfileComponent,
+    AboutComponent,
   ],
 })
 export class AdminLayoutModule {}

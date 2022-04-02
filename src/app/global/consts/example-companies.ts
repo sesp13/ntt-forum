@@ -6,6 +6,20 @@ export const DhlCompany: Company = {
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat sit placeat mollitia repellat aliquid reiciendis, pariatur maiores saepe alias dolorum nemo optio voluptatum blanditiis sunt odio voluptate vel temporibus.',
   rate: 4.5,
   image: 'assets/img/companies/DHL.png',
+  users: [
+    {
+      name: 'David García',
+      email: 'davidG@email.com',
+    },
+    {
+      name: 'Mateo Roldán',
+      email: 'mateoRoldan@email.com',
+    },
+    {
+      name: 'Juan Esteban Cendales',
+      email: 'juanes@email.com',
+    },
+  ],
 };
 
 export const MagnumCompany: Company = {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DummieCompany1 } from 'app/global/consts/example-companies';
+import { DhlCompany } from 'app/global/consts/example-companies';
 import { Company } from 'app/global/interfaces/company.inteface';
 
 @Component({
@@ -8,7 +8,7 @@ import { Company } from 'app/global/interfaces/company.inteface';
   styleUrls: ['./company-public-profile.component.css'],
 })
 export class CompanyPublicProfileComponent implements OnInit {
-  company: Company = DummieCompany1;
+  company: Company = DhlCompany;
 
   constructor() {}
 
