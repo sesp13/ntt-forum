@@ -21,7 +21,9 @@
       </span>
       Por
       <span>
-        {{ userName }}
+        <a [routerLink]="['/public-profile']">
+          {{ userName }}
+        </a>
       </span>
     </small>
     <img [src]="userProfileImage" class="user-image" alt="Imagen de perfil">
