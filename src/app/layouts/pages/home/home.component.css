@@ -1,16 +1,7 @@
-/* global stuff */
-.card{
-  padding: 25px;
-}
-
-.company-list{
-  list-style: none;
-}
-
 /* global content sections */
 
 .content-section{
-  padding: 40px 20px 5px 20px;
+  padding: 10px 10px 5px 10px;
 }
 
 .content-section h2{
@@ -35,14 +26,13 @@
   font-style: italic;
 }
 
-
-
 /* problems section */
 #problems-section h2{
   text-align: center;
   color: red;
   font-style: italic;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 #problems-section img{
@@ -61,8 +51,4 @@
   display: block;
   margin: 0 auto;
   max-width: 60%;
-}
-
-#solutions-section .purpose-text{
-  margin-top: 40px !important;
 }
