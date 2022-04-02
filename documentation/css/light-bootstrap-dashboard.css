@@ -486,6 +486,19 @@ input:focus {
   background: linear-gradient(to bottom, #1F77D0 0%, #533ce1 100%);
   background-size: 150% 150%;
 }
+
+.sidebar[data-color="black"]:after,
+.bootstrap-navbar[data-color="black"]:after {
+  background: black;
+  background: -moz-linear-gradient(top, black 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, black));
+  background: -webkit-linear-gradient(top, black 0%, black 100%);
+  background: -o-linear-gradient(top, black 0%, black 100%);
+  background: -ms-linear-gradient(top, black 0%, black 100%);
+  background: linear-gradient(to bottom, black 0%, black 100%);
+  background-size: 150% 150%;
+}
+
 .sidebar[data-color="azure"]:after,
 .bootstrap-navbar[data-color="azure"]:after {
   background: #1DC7EA;
