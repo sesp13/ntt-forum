@@ -1,0 +1,67 @@
+:root{
+  --facebook-color: #1c79f2
+}
+
+.main-content{
+  padding-top: 50px;
+  background-color: #f7f7f8;
+  height: 100vh;
+}
+
+.company-container{
+  display: block;
+  margin: 0 auto;
+  margin-top: 10vh;
+  max-width: 500px;
+}
+
+.login-card{
+  padding: 30px;
+  margin-top: 10vh;
+  max-width: 500px;
+}
+
+
+.company-logo{
+  padding-top: 50px;
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.company-title {
+  text-align: center;
+  color: #42d0ed;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.buttons-panel{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.google-auth{
+  background-color: #e06057;
+  border-color: #e06057;
+}
+.google-auth:hover,
+.google-auth:focus{
+  background-color: white;
+  color: #e06057;
+  border-color: black;
+}
+
+.facebook-auth{
+  background-color: #1c79f2;
+  border-color: #1c79f2;
+}
+.facebook-auth:hover,
+.facebook-auth:focus
+{
+  background-color: white;
+  color: #1c79f2;
+  border-color: black;
+}

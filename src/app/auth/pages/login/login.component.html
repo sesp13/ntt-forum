@@ -1,1 +1,72 @@
-<p>login works!</p>
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="company-container">
+          <img
+            src="assets/img/FCN-profile.png"
+            alt="Firth Logo"
+            class="company-logo"
+          />
+          <h3 class="company-title">FIRTH Colaborative network</h3>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card login-card">
+          <div class="card-header">
+            <h3>Iniciar Sesión</h3>
+            <form [formGroup]="myForm">
+              <div class="form-group">
+                <label>Usuario</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  formControlName="user"
+                />
+              </div>
+              <div class="form-group">
+                <label>Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  formControlName="password"
+                />
+              </div>
+              <div class="form-group">
+                <button
+                  type="button"
+                  class="btn btn-info btn-fill"
+                  (click)="goToForum()"
+                  [disabled]="myForm.invalid"
+                >
+                  Iniciar sesión
+                </button>
+              </div>
+
+              <div class="form-group">
+                <p class="text-center">O continúa con</p>
+                <div class="buttons-panel">
+                  <button
+                    class="btn btn-fill google-auth"
+                    (click)="goToForum()"
+                    [disabled]="myForm.invalid"
+                  >
+                    Google <i class="fa fa-google" aria-hidden="true"></i>
+                  </button>
+                  <button
+                    class="btn btn-fill facebook-auth"
+                    (click)="goToForum()"
+                    [disabled]="myForm.invalid"
+                  >
+                    Facebook
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

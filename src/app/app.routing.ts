@@ -23,27 +23,21 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'auth',
-        loadChildren: () =>
-          import('./auth/auth.module').then(
-            (m) => m.AuthModule
-          ),
-      },
-      {
         path: 'forum',
         loadChildren: () =>
-        import('./forum/forum.module').then(
-          (m) => m.ForumModule
-        ),
+          import('./forum/forum.module').then((m) => m.ForumModule),
       },
       {
         path: 'match',
         loadChildren: () =>
-        import('./matching/matching.module').then(
-          (m) => m.MatchingModule
-        ),
-      }
+          import('./matching/matching.module').then((m) => m.MatchingModule),
+      },
     ],
+  },
+  {
+    path: 'auth',
+    loadChildren: () =>
+      import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
     path: '**',
