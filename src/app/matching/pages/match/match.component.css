@@ -12,3 +12,9 @@
   transform: scale(1.5);
   margin-right: 10px;
 }
+
+.start-end-proccess{
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}

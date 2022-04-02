@@ -9,7 +9,11 @@ import { SearchConfig } from 'app/matching/interfaces/search-match.inteface';
   styleUrls: ['./match.component.css'],
 })
 export class MatchComponent implements OnInit {
-  myForm: FormGroup = this.fb.group({});
+  myForm: FormGroup = this.fb.group({
+    weeks: [2],
+    costs: [1000],
+  });
+  step: number = 2;
 
   productConfig: SearchConfig = {
     label: 'Productos a importar / exportar',
@@ -35,4 +39,8 @@ export class MatchComponent implements OnInit {
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {}
+
+  changeStep(value: number) {
+    this.step += value;
+  }
 }

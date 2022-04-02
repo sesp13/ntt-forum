@@ -1,14 +1,14 @@
 <div class="main-content">
   <div class="container-fluid">
-    <h2 class="text-center">Matching</h2>
+    <h1 class="text-center">Matching</h1>
     <p class="text-center">
       Haz match con una compañía de acuerdo a tus necesidades!
     </p>
     <hr />
     <div class="card p-5">
-      <h2>Paso 1</h2>
-      <div class="content">
-        <form [formGroup]="myForm" class="example-form">
+      <form [formGroup]="myForm" class="example-form">
+        <div class="content" id="step-1" *ngIf="step == 1">
+          <h2>Paso 1</h2>
           <div class="row">
             <div class="col-md-8">
               <app-search-bar [config]="productConfig"></app-search-bar>
@@ -19,6 +19,11 @@
             <div class="col-md-12">
               <div class="form-group">
                 <label>Inicio y Fin del proceso a realizar</label>
+                <img
+                  src="assets/img/start-end-match.png"
+                  alt="Inicio Fin Proceso"
+                  class="start-end-proccess"
+                />
               </div>
             </div>
           </div>
@@ -35,6 +40,7 @@
                   <div>
                     <input type="number" class="form-control" />
                   </div>
+                  <p><em> m3 / kg </em></p>
                 </div>
               </div>
             </div>
@@ -49,12 +55,90 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-info btn-fill pull-right">
+          <button
+            type="button"
+            class="btn btn-info btn-fill pull-right"
+            (click)="changeStep(1)"
+          >
             Siguiente paso
           </button>
           <div class="clearfix"></div>
-        </form>
-      </div>
+        </div>
+
+        <div class="content" id="step-2" *ngIf="step == 2">
+          <h2>Paso 2</h2>
+          <hr />
+
+          <h3>Selecciona los valores de tu preferencia</h3>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label
+                  >Tiempo del proceso *
+                  <em>
+                    Rango según los históricos de la plataforma para este
+                    proceso COL -> USA
+                  </em>
+                </label>
+                <input
+                  type="range"
+                  min="2"
+                  max="4"
+                  step="1"
+                  class="form-control"
+                  formControlName="weeks"
+                />
+                <p>{{ myForm.get('weeks')?.value }} Semanas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label
+                  >Costos del proceso *
+                  <em>
+                    Rango según los históricos de la plataforma para este
+                    proceso COL -> USA
+                  </em>
+                </label>
+                <input
+                  type="range"
+                  min="1000"
+                  max="10000"
+                  class="form-control"
+                  formControlName="costs"
+                />
+                <p>{{ myForm.get('costs')?.value }} Dólares</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-info btn-fill pull-left"
+            (click)="changeStep(-1)"
+          >
+            Paso anterior
+          </button>
+          <button
+            type="button"
+            class="btn btn-info btn-fill pull-right"
+            (click)="changeStep(1)"
+          >
+            Finalizar
+          </button>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="content" id="step-3" *ngIf="step == 3">
+          <h2>Estos son tus resultados!</h2>
+          <hr />
+          Ya dominas el mundo!!
+        </div>
+      </form>
     </div>
   </div>
 </div>
