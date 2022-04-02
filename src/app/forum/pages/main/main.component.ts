@@ -27,6 +27,7 @@ export class MainComponent implements OnInit {
         user: {
           name: 'David García',
           email: 'david@correo.com',
+          image: 'assets/img/DGB.png'
         },
         answers: [
           {
@@ -54,6 +55,7 @@ export class MainComponent implements OnInit {
         user: {
           name: 'Santiago Espinosa',
           email: 'santiago@correo.com',
+          image: 'assets/img/faces/SESP13.png'
         },
         answers: [
           {

@@ -11,6 +11,7 @@ export class ArticleListComponent implements OnInit {
   @Input() title: string = '';
   @Input() category: string = '';
   @Input() userName: string = '';
+  @Input() userProfileImage: string = '';
 
   constructor() { }
 

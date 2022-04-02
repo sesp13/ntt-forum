@@ -1,6 +1,17 @@
 <article class="row article-body">
   <div class="col-sm-4">
     <img [src]="imageSrc" class="main-image" alt="imagen-de-articulo" />
+    <div class="buttons-panel">
+      <button class="btn  btn-success">
+        <i class="pe-7s-like"></i>
+      </button>
+      <button class="btn  btn-danger">
+        <i class="fa fa-thumbs-down"></i>
+      </button>
+      <button class="btn  btn-primary">
+        <i class="pe-7s-chat"></i>
+      </button>
+    </div>
   </div>
   <div class="col-sm-8" class="content-column">
     <h4>{{ title }}</h4>
@@ -13,16 +24,6 @@
         {{ userName }}
       </span>
     </small>
-    <div class="buttons-panel">
-      <button class="btn  btn-success">
-        <i class="pe-7s-like"></i>
-      </button>
-      <button class="btn  btn-danger">
-        <i class="fa fa-thumbs-down"></i>
-      </button>
-      <button class="btn  btn-primary">
-        <i class="pe-7s-chat"></i>
-      </button>
-    </div>
+    <img [src]="userProfileImage" class="user-image" alt="Imagen de perfil">
   </div>
 </article>
