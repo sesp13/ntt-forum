@@ -7,11 +7,7 @@
           <hr />
           <app-article-list
             *ngFor="let question of questions"
-            [title]="question.question"
-            [imageSrc]="question.image"
-            [category]="question.category"
-            [userName]="question.user.name"
-            [userProfileImage]="question.user.image"
+            [question]="question"
           ></app-article-list>
         </div>
       </div>

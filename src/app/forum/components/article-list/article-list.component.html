@@ -1,31 +1,36 @@
 <article class="row article-body">
   <div class="col-sm-4">
-    <img [src]="imageSrc" class="main-image" alt="imagen-de-articulo" />
+    <img [src]="question?.image" class="main-image" alt="imagen-de-articulo" />
     <div class="buttons-panel">
-      <button class="btn  btn-success">
-        <i class="pe-7s-like"></i>
+      <button class="btn btn-success">
+        ({{ question?.reactions }}) <i class="pe-7s-like"></i>
       </button>
-      <button class="btn  btn-danger">
+      <button class="btn btn-danger">
         <i class="fa fa-thumbs-down"></i>
       </button>
-      <button class="btn  btn-primary">
+      <a class="btn btn-primary" [routerLink]="['/question']">
+        ({{ question?.answers ? question.answers.length : 0 }})
         <i class="pe-7s-chat"></i>
-      </button>
+      </a>
     </div>
   </div>
   <div class="col-sm-8" class="content-column">
-    <h4>{{ title }}</h4>
+    <h4>{{ question?.question }}</h4>
+    <span *ngFor="let category of question?.categories" class="category">
+      {{ category }}
+    </span>
     <small>
-      <span class="category">
-        {{ category }}
-      </span>
       Por
       <span>
         <a [routerLink]="['/public-profile']">
-          {{ userName }}
+          {{ question?.user?.name }}
         </a>
       </span>
     </small>
-    <img [src]="userProfileImage" class="user-image" alt="Imagen de perfil">
+    <img
+      [src]="question?.user?.image"
+      class="user-image"
+      alt="Imagen de perfil"
+    />
   </div>
 </article>

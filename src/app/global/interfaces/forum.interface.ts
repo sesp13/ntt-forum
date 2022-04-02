@@ -7,7 +7,7 @@ export interface ForumQuestion {
   featuredAnswers?: ForumAnwser[];
   reactions?: number;
   image?: string;
-  category?: string;
+  categories?: string[];
 }
 
 export interface ForumAnwser {

@@ -35,9 +35,10 @@ export class MainComponent implements OnInit {
   setQuestions(): void {
     this.questions = [
       {
-        question: '¿Cuál es el mejor lugar para hacer exportaciones?',
+        question: 'Quiero llevar mis productos a USA, ¿qué requerimientos debo cumplir?',
         image: 'assets/img/comercio-cover.jpg',
-        category: 'Exportaciones',
+        categories: ['Exportaciones', 'Trámites'],
+        reactions: 15,
         user: this.commonUser1,
         answers: [
           {
@@ -58,11 +59,12 @@ export class MainComponent implements OnInit {
       },
       {
         question:
-          '¿Cómo exportar café?',
+          '¿Qué empresa me recomiendan para transportar mis fresas al puerto de Buenaventura?',
         image:
           'https://www.ubicalo.com.mx/wp-content/uploads/2020/05/original-bcb8dfae789303136afad728286b86fe.jpeg',
-        category: 'Transporte',
+        categories: ['Transporte'],
         user: this.commonUser2,
+        reactions: 10,
         answers: [
           {
             answer:
@@ -82,10 +84,10 @@ export class MainComponent implements OnInit {
       },
       {
         question:
-          '¿Cómo exportar café?',
-        image:
-          'https://www.semana.com/resizer/rH4_rbif0fmvefux9P8yPeuPOhA=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/EMVX56K62JCS7J3BH2M4BA33RU.jpg',
-        category: 'Transporte',
+          '¿Soy un pequeño cultivador, me podrían guiar para exportar mis aguacates?',
+        image: 'https://www.semana.com/resizer/vmtKzidWNrVXVVCbZHX16Ki5YKY=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/GOG6DOK6KNA73OVVGITJ5ZCIMQ.jpg',
+        categories: ['Productos agrícolas'],
+        reactions: 1,
         user: this.commonUser1,
         answers: [
           {
