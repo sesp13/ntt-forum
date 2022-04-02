@@ -13,7 +13,7 @@ export class MatchComponent implements OnInit {
     weeks: [2],
     costs: [1000],
   });
-  step: number = 1;
+  step: number = 3;
 
   productConfig: SearchConfig = {
     label: 'Productos a importar / exportar',
