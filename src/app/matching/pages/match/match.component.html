@@ -1,7 +1,32 @@
 <div class="main-content">
   <div class="container-fluid">
-    <h1>Match</h1>
+    <h2 class="text-center">Matching</h2>
+    <p class="text-center">
+      Haz match con una compañía de acuerdo a tus necesidades!
+    </p>
     <hr />
-    <p>Haz match con una compañía de acuerdo a tus necesidades!</p>
+
+    <div class="card p-5">
+      <h2>Paso 1</h2>
+      <form [formGroup]="myForm" class="example-form">
+        <mat-label>Number</mat-label>
+        <input
+          type="text"
+          placeholder="Pick one"
+          aria-label="Number"
+          matInput
+          [formControl]="myControl"
+          [matAutocomplete]="auto"
+        />
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option
+            *ngFor="let option of filteredOptions | async"
+            [value]="option"
+          >
+            {{ option }}
+          </mat-option>
+        </mat-autocomplete>
+      </form>
+    </div>
   </div>
 </div>
