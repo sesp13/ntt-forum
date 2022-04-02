@@ -28,6 +28,13 @@ const routes: Routes = [
         import('./forum/forum.module').then(
           (m) => m.ForumModule
         ),
+      },
+      {
+        path: 'match',
+        loadChildren: () =>
+        import('./matching/matching.module').then(
+          (m) => m.MatchingModule
+        ),
       }
     ],
   },

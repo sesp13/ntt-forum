@@ -16,7 +16,6 @@ import { TablesComponent } from 'app/tables/tables.component';
 import { TypographyComponent } from 'app/typography/typography.component';
 import { IconsComponent } from 'app/icons/icons.component';
 import { NotificationsComponent } from 'app/notifications/notifications.component';
-import { MatchComponent } from './pages/match/match.component';
 import { ActionButtonsComponent } from './components/action-buttons/action-buttons.component';
 import { QuestionDetailComponent } from './pages/question-detail/question-detail.component';
 import { PublicProfileComponent } from './pages/public-profile/public-profile.component';
@@ -37,7 +36,6 @@ import { CompanyPublicProfileComponent } from './pages/company-public-profile/co
     TypographyComponent,
     IconsComponent,
     NotificationsComponent,
-    MatchComponent,
     ActionButtonsComponent,
     QuestionDetailComponent,
     PublicProfileComponent,
