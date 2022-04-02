@@ -11,9 +11,10 @@ import { MatchingRoutingModule } from './matching-routing.module';
 
 import { MatchComponent } from './pages/match/match.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
-  declarations: [MatchComponent],
+  declarations: [MatchComponent, SearchBarComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

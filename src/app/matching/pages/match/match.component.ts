@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
-import { Observable } from 'rxjs';
-import { map, startWith } from 'rxjs/operators';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { countryList } from 'app/global/consts/countries.const';
+import { SearchConfig } from 'app/matching/interfaces/search-match.inteface';
 
 @Component({
   selector: 'app-match',
@@ -10,24 +10,29 @@ import { map, startWith } from 'rxjs/operators';
 })
 export class MatchComponent implements OnInit {
   myForm: FormGroup = this.fb.group({});
-  myControl = new FormControl();
-  options: string[] = ['One', 'Two', 'Three'];
-  filteredOptions: Observable<string[]>;
+
+  productConfig: SearchConfig = {
+    label: 'Productos a importar / exportar',
+    options: [
+      '08101000 - Fresas(frutillas), frescas',
+      '930510400 - Frenos, pistones, pasadores y amortiguadores',
+    ],
+    placeholder: 'Digita un producto',
+  };
+
+  originConfig: SearchConfig = {
+    label: 'País de origen',
+    options: countryList,
+    placeholder: 'Escoge un país de origen',
+  };
+
+  depatureConfig: SearchConfig = {
+    label: 'País de destino',
+    options: countryList,
+    placeholder: 'Escoge un país de destino',
+  };
 
   constructor(private fb: FormBuilder) {}
 
-  ngOnInit() {
-    this.filteredOptions = this.myControl.valueChanges.pipe(
-      startWith(''),
-      map((value) => this._filter(value))
-    );
-  }
-
-  private _filter(value: string): string[] {
-    const filterValue = value.toLowerCase();
-
-    return this.options.filter((option) =>
-      option.toLowerCase().includes(filterValue)
-    );
-  }
+  ngOnInit(): void {}
 }

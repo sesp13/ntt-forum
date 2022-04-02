@@ -5,28 +5,56 @@
       Haz match con una compañía de acuerdo a tus necesidades!
     </p>
     <hr />
-
     <div class="card p-5">
       <h2>Paso 1</h2>
-      <form [formGroup]="myForm" class="example-form">
-        <mat-label>Number</mat-label>
-        <input
-          type="text"
-          placeholder="Pick one"
-          aria-label="Number"
-          matInput
-          [formControl]="myControl"
-          [matAutocomplete]="auto"
-        />
-        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-          <mat-option
-            *ngFor="let option of filteredOptions | async"
-            [value]="option"
-          >
-            {{ option }}
-          </mat-option>
-        </mat-autocomplete>
-      </form>
+      <div class="content">
+        <form [formGroup]="myForm" class="example-form">
+          <div class="row">
+            <div class="col-md-8">
+              <app-search-bar [config]="productConfig"></app-search-bar>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Inicio y Fin del proceso a realizar</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label>Cantidad a exportar / importar</label>
+                <div class="measures">
+                  <p>
+                    <input type="radio" name="n1" value="option 1" /> Volumen
+                  </p>
+                  <p><input type="radio" name="n1" value="option 2" /> Masa</p>
+                  <div>
+                    <input type="number" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <app-search-bar [config]="originConfig"></app-search-bar>
+            </div>
+            <div class="col-md-6">
+              <app-search-bar [config]="depatureConfig"></app-search-bar>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-info btn-fill pull-right">
+            Siguiente paso
+          </button>
+          <div class="clearfix"></div>
+        </form>
+      </div>
     </div>
   </div>
 </div>

@@ -1,9 +1,14 @@
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
+.measures {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
-.example-full-width {
-  width: 100%;
+.measures p {
+  padding-top: 10px;
+}
+
+.measures input[type='radio'] {
+  transform: scale(1.5);
+  margin-right: 10px;
 }
