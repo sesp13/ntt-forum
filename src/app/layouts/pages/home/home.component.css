@@ -19,9 +19,23 @@
 
 .purpose-text{
   color: black;
-  text-align: center;
-  font-size: 20px;
+  text-align: justify;
+  font-size: 25px;
+  padding: 0px 30px;
 }
+
+.purpose-text-center{
+  text-align: center;
+}
+
+.purpose-text .important-text{
+  font-weight: bold;
+  font-size: 36px;
+  color: #00ADEF;
+  font-style: italic;
+}
+
+
 
 /* problems section */
 #problems-section h2{
@@ -34,33 +48,21 @@
 #problems-section img{
   display: block;
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 50%;
 }
 
 /* solutions-section */
 #solutions-section h2{
-  color: blue;
+  color: #01297F;
   font-weight: bold;
 }
 
 #solutions-img{
   display: block;
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 75%;
 }
 
-/* benefits section */
-
-#benefits-section{
-  background-color: white;
-}
-
-#benefits-section h2{
-  margin-top: 0px;
-}
-
-#reductions-img{
-  display: block;
-  margin: 0 auto;
-  max-width: 50%;
+#solutions-section .purpose-text{
+  margin-top: 40px !important;
 }
