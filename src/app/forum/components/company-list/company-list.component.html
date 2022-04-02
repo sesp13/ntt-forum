@@ -1,0 +1,13 @@
+<div class="row company-article">
+  <div class="col-md-4">
+    <img [src]="companyImage" alt="Imagen de la empresa" class="company-img" />
+  </div>
+  <div class="col-md-8" class="content-column">
+    <h4>
+      <a [routerLink]="['/company-public-profile']">
+        {{ companyName }}
+      </a>
+    </h4>
+    <small>Calificación: {{ companyRate | number }}</small>
+  </div>
+</div>

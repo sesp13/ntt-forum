@@ -1,0 +1,12 @@
+.company-article{
+  padding: 20px;
+}
+
+.company-img{
+  max-width: 100%;
+  border-radius: 25px;
+}
+
+.content-column h4{
+  margin-top: 10px;
+}

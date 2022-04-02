@@ -17,18 +17,15 @@
       </div>
       <div class="col-md-4">
         <div class="card p-5">
-          <h3>Mejores empresas</h3>
+          <h3>Reputación empresas</h3>
+          <hr />
           <div class="card-body">
-            <ul>
-              <li *ngFor="let company of companies" class="mb-3 company-list">
-                <p>
-                  <a [routerLink]="['/company-public-profile']">
-                    {{ company.name }}
-                  </a>
-                </p>
-                <small>Rate: {{ company.rate }}</small>
-              </li>
-            </ul>
+            <app-company-list
+              *ngFor="let company of companies"
+              [companyName]="company.name"
+              [companyRate]="company.rate"
+              [companyImage]="company.image"
+            ></app-company-list>
           </div>
         </div>
       </div>
