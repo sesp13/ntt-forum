@@ -23,6 +23,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'auth',
+        loadChildren: () =>
+          import('./auth/auth.module').then(
+            (m) => m.AuthModule
+          ),
+      },
+      {
         path: 'forum',
         loadChildren: () =>
         import('./forum/forum.module').then(

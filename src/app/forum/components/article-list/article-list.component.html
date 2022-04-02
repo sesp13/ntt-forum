@@ -15,7 +15,11 @@
     </div>
   </div>
   <div class="col-sm-8" class="content-column">
-    <h4>{{ question?.question }}</h4>
+    <h4 class="article-title">
+      <a [routerLink]="['/question']">
+        {{ question?.question }}    
+      </a>
+    </h4>
     <span *ngFor="let category of question?.categories" class="category">
       {{ category }}
     </span>
