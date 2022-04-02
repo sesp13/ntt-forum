@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  DhlCompany,
+  MagnumCompany,
+  TccCompany,
+} from 'app/global/consts/example-companies';
 import { Company } from 'app/global/interfaces/company.inteface';
 import { ForumQuestion } from 'app/global/interfaces/forum.interface';
 import { User } from 'app/global/interfaces/user.interface';
@@ -15,15 +20,14 @@ export class MainComponent implements OnInit {
   commonUser1: User = {
     name: 'David García',
     email: 'david@correo.com',
-    image: 'assets/img/faces/DGB.png'
-  }
+    image: 'assets/img/faces/DGB.png',
+  };
 
   commonUser2: User = {
     name: 'Santiago Espinosa',
     email: 'santiago@correo.com',
-    image: 'assets/img/faces/SESP13.png'
-  }
-
+    image: 'assets/img/faces/SESP13.png',
+  };
 
   constructor() {}
 
@@ -35,7 +39,8 @@ export class MainComponent implements OnInit {
   setQuestions(): void {
     this.questions = [
       {
-        question: 'Quiero llevar mis productos a USA, ¿qué requerimientos debo cumplir?',
+        question:
+          'Quiero llevar mis productos a USA, ¿qué requerimientos debo cumplir?',
         image: 'assets/img/comercio-cover.jpg',
         categories: ['Exportaciones', 'Trámites'],
         reactions: 15,
@@ -85,7 +90,8 @@ export class MainComponent implements OnInit {
       {
         question:
           '¿Soy un pequeño cultivador, me podrían guiar para exportar mis aguacates?',
-        image: 'https://www.semana.com/resizer/vmtKzidWNrVXVVCbZHX16Ki5YKY=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/GOG6DOK6KNA73OVVGITJ5ZCIMQ.jpg',
+        image:
+          'https://www.semana.com/resizer/vmtKzidWNrVXVVCbZHX16Ki5YKY=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/GOG6DOK6KNA73OVVGITJ5ZCIMQ.jpg',
         categories: ['Productos agrícolas'],
         reactions: 1,
         user: this.commonUser1,
@@ -110,22 +116,6 @@ export class MainComponent implements OnInit {
   }
 
   setCompanies(): void {
-    this.companies = [
-      {
-        name: 'Magnum',
-        rate: 4.6,
-        image: 'assets/img/companies/Magnum.png'
-      },
-      {
-        name: 'DHL',
-        rate: 4.5,
-        image: 'assets/img/companies/DHL.png'
-      },
-      {
-        name: 'TCC',
-        rate: 4,
-        image: 'assets/img/companies/TCC.png'
-      },
-    ];
+    this.companies = [MagnumCompany, DhlCompany, TccCompany];
   }
 }
